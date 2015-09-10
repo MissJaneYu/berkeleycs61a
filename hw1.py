@@ -1,6 +1,3 @@
-# berkeleycs61a HW1
-2014cs61a
-
 from operator import add, sub
 def a_plus_b(a,b):
 	"""Return a+abs(b),but without calling abs.
@@ -29,7 +26,7 @@ def two_of_three(a, b, c):
     >>> two_of_three(5, 5, 5)
     50
     """
-  return a*a + b*b + c*c - min(a,b,c)*min(a,b,c)
+    return a*a + b*b + c*c - min(a,b,c)*min(a,b,c)
 
 
 
@@ -46,9 +43,9 @@ def if_function(condition, true_result, false_result):
     >>> if_function(3>2, 3+2, 3-2)
     5
     """
-  if condition:
+    if condition:
         return true_result
-  else:
+    else:
         return false_result
     
 def with_if_statement():
@@ -67,7 +64,7 @@ def with_if_function():
     >>> with_if_function()
     3
     """
-  return if_function(c(), t(), f())
+    return if_function(c(), t(), f())
 
 def c():
         global x
@@ -93,4 +90,3 @@ def hailstone(n):
             n = n * 3 + 1
         k += 1
     return k
-
